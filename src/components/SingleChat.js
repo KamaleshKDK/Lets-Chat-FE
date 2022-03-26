@@ -15,7 +15,7 @@ import Robot from "../assets/robot.gif";
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
-const ENDPOINT = "https://lets-chat-app-be.herokuapp.com"; // "https://talk-a-tive.herokuapp.com"; -> After deployment
+const ENDPOINT = "https://lets-chat-app-be.herokuapp.com";
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
@@ -201,7 +201,8 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             flexDir="column"
             justifyContent="flex-end"
             p={3}
-            bgImage="url('https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
+            bgImage="url('https://img.freepik.com/free-photo/dolomites-italy-landscape-lake-antorno_31965-5497.jpg?size=626&ext=jpg&ga=GA1.2.1124220942.1641095515')"
+            backgroundSize="cover"
             w="100%"
             h="100%"
             borderRadius="lg"
